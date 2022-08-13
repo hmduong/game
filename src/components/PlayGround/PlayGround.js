@@ -1,5 +1,5 @@
 import classNames from 'classnames/bind';
-import WordCard from '../WordCard';
+import WordCard from '~/components/WordCard';
 import styles from './PlayGround.module.scss';
 
 const cx = classNames.bind(styles);
