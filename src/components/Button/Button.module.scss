@@ -1,0 +1,54 @@
+.button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+  font-size: 2.4rem;
+  font-weight: 500;
+  background-color: #fffbda;
+  border: 2px solid #111;
+  border-radius: 8px;
+  color: #111;
+  user-select: none;
+  touch-action: manipulation;
+
+  &:active {
+    background-color: #ffdeda;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -2px;
+    background-color: rgb(82, 82, 82);
+    border-radius: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: translate(8px, 8px);
+    transition: transform 0.2s ease-out;
+    z-index: -1;
+  }
+
+  &:hover::before {
+    transform: translate(0, 0);
+  }
+
+  &:disabled {
+    color: #999;
+    background-color: #d5d5d5;
+    border-color: #999;
+  }
+
+  a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+  }
+}

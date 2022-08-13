@@ -1,0 +1,51 @@
+.score-board {
+  height: 300px;
+  width: 270px;
+  border: 10px outset rgb(255, 145, 0);
+  color: rgb(255, 145, 0);
+
+  h1 {
+    height: 20%;
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
+.table {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.table-heading {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+
+  h3 {
+    font-size: 1.5rem;
+    flex: 1;
+    text-align: center;
+  }
+}
+
+.list-players {
+  width: 100%;
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+}
+
+.player {
+  flex: 1;
+  display: flex;
+
+  div {
+    flex: 1;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}

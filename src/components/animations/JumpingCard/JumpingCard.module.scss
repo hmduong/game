@@ -1,0 +1,104 @@
+.ground {
+  position: relative;
+  width: fit-content;
+  height: 300px;
+  width: 270px;
+  display: inline-block;
+}
+
+.card {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border-radius: 20px;
+  z-index: 0;
+  background-color: rgb(255, 135, 175);
+  animation: bounding 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.27, 0.9, 0.56, 1.01);
+  animation-direction: alternate;
+}
+
+.body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.eyes {
+  margin: 10px auto 0;
+  width: 70%;
+  flex: 3;
+  left: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.eye {
+  width: 35px;
+  height: 40px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  border: 5px solid rgb(255, 255, 255);
+
+  &::before {
+    content: ' ';
+    height: 10px;
+    margin-top: -20px;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 -3px 0 0 black;
+  }
+
+  div {
+    width: 10px;
+    height: 10px;
+    margin: 10px 0 0 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+.cheeks {
+  margin: 0 auto;
+  width: 70%;
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.cheek {
+  width: 30px;
+  height: 10px;
+  border-radius: 40%;
+  background-color: red;
+}
+
+.mouth {
+  margin: -40px auto 20px;
+  width: 50px;
+  height: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top: 0;
+  border-bottom: 5px solid red;
+  border-left: 5px solid red;
+  border-right: 5px solid red;
+}
+
+@keyframes bounding {
+  0% {
+    bottom: 0;
+    height: 130px;
+  }
+  100% {
+    height: 170px;
+    bottom: 100px;
+  }
+}

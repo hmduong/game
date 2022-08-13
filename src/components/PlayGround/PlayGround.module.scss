@@ -1,0 +1,22 @@
+.play-ground {
+  background-color: bisque;
+  width: 90%;
+  height: 50%;
+  border-radius: 10px;
+}
+
+.cards {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5px;
+  margin-top: 5px;
+  padding-bottom: 5px;
+
+  li {
+    width: 25%;
+    height: 25%;
+    padding-right: 5px;
+    padding-bottom: 5px;
+  }
+}
