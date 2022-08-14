@@ -17,7 +17,7 @@ export default function Menu() {
               <JumpingCard />
             </div>
             <div className={cx('mid-menu')}>
-              <h1 className={cx('title')}>Funny Cảd</h1>
+              <h1 className={cx('title')}>English Card</h1>
               <PlayerForm />
             </div>
             <div className={cx('score-board')}>

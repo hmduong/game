@@ -35,7 +35,7 @@ export default function PlayerForm() {
       setMess('Enter your name here!');
     } else if (debounce.length < 5) {
       setIsLoading(false);
-      setMess('Your name is too short! like ur c*ck');
+      setMess('Your name is too short!');
     } else {
       setIsLoading(true);
       axios
