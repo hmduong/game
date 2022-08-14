@@ -15,6 +15,7 @@ export default function ScoreBoard() {
       .get('https://62f385a718493ca21f4561d5.mockapi.io/players', {
         params: {
           limit: 5,
+          page: 1,
           sortby: 'score',
         },
       })

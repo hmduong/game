@@ -10,7 +10,7 @@ const memoName = sessionStorage.getItem('player');
 
 export default function GameOver() {
   const name = useSelector((state) => state.name.value) || memoName;
-  const score = useSelector((state) => state.score.value);
+  const score = useSelector((state) => state.score.value / 2);
   const dispatch = useDispatch();
 
   return (
